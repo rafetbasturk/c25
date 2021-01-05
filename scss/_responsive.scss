@@ -1,5 +1,6 @@
 @include tablet {
     header{
+        display: grid !important;
         grid-template-columns: 120fr 1320fr;
         padding: 4rem;
         background: transparent !important;
@@ -13,14 +14,27 @@
         display: none !important;
     }
 
+    #logo {
+        display: block !important;
+    }
+
     nav {
         display: block !important;
+        justify-content: start;
         margin-left: 4rem;
         
         ul {
             color: $color-white;
-            li:last-of-type{
-                padding-right: 1rem;
+            
+            li {
+                &:last-of-type{
+                    padding-right: 1rem;
+                }
+
+                &:hover span{
+                    display: block;
+                    border-color: $color-white;
+                }
             }
         }
     }

@@ -90,5 +90,4 @@ closeIcon.addEventListener("click", function () {
     nav.style.display = "none";
     header.style.background = "none";
     header.style.display = "grid";
-    header.style.justifyContent = "space-between";
 });

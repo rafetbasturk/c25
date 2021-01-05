@@ -114,7 +114,7 @@ nav li span {
   display: none;
   width: 20px;
   height: 10px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -219,6 +219,8 @@ footer a {
 
 @media screen and (min-width: 850px) {
   header {
+    display: -ms-grid !important;
+    display: grid !important;
     -ms-grid-columns: 120fr 1320fr;
         grid-template-columns: 120fr 1320fr;
     padding: 4rem;
@@ -230,8 +232,14 @@ footer a {
   #close-icon {
     display: none !important;
   }
+  #logo {
+    display: block !important;
+  }
   nav {
     display: block !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-left: 4rem;
   }
   nav ul {
@@ -239,6 +247,10 @@ footer a {
   }
   nav ul li:last-of-type {
     padding-right: 1rem;
+  }
+  nav ul li:hover span {
+    display: block;
+    border-color: white;
   }
   main {
     display: -ms-grid;
