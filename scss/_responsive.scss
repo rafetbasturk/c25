@@ -89,6 +89,14 @@
             line-height: 1.8;
         }
     }
+
+    footer {
+        position: absolute;
+        right: -8rem;
+        bottom: 11rem;
+        transform: rotate(270deg);
+        margin: 0;
+    }
 }
 
 @include laptop {

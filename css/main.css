@@ -303,6 +303,14 @@ footer a {
     font-size: 1.15rem;
     line-height: 1.8;
   }
+  footer {
+    position: absolute;
+    right: -8rem;
+    bottom: 11rem;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
