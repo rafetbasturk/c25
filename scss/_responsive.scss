@@ -1,0 +1,123 @@
+@include tablet {
+    header{
+        grid-template-columns: 120fr 1320fr;
+        padding: 4rem;
+        background: transparent !important;
+    }
+
+    #hamburger-icon{
+        display: none !important;
+    }
+
+    #close-icon {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+        margin-left: 4rem;
+        
+        ul {
+            color: $color-white;
+            li:last-of-type{
+                padding-right: 1rem;
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 840fr 600fr;
+        grid-template-rows: 535px;
+
+        #hero-image{
+            display: none;
+        }
+    
+        #hero-image-desktop{
+            display: block;
+            height: 100%;
+        }
+
+        .text {
+            padding: 0 5rem;
+            align-self: center;
+        }
+
+        #arrows {
+            position: absolute;
+            top: 480px;
+            left: 58.33%;
+        }
+    }
+
+    section {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 420fr 580fr 440fr;
+        grid-template-rows: 270px;
+        align-items: center;
+
+        img{
+            height: 100%;
+        }
+
+        div {
+            padding: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+    }
+}
+
+@include laptop {
+    header {
+        padding: 6rem;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    main {
+        .text {
+            padding: 12rem 10rem;
+        }
+
+        h1 {
+            font-size: 3.75rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 3.5rem;
+        }
+    
+        #arrows {
+            width: 160px;
+            height: 80px;
+            position: absolute;
+            top: 455px;
+            left: 58.33%;
+
+            span {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    section {
+        div {
+            padding: 7rem 4.8rem;
+        }
+    }
+}

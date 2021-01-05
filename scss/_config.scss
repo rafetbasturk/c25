@@ -1,0 +1,26 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// variables
+
+$color-d-gray: hsl(0, 0%, 63%);
+$color-black: hsl(0, 0%, 0%);
+$color-white: hsl(0, 0%, 100%);
+$color-v-d-gray: hsl(0, 0%, 27%);
+
+// responsive breakpoints
+
+@mixin tablet {
+    @media screen and (min-width: 850px) {
+        @content; 
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 1200px) {
+        @content; 
+    }
+}
