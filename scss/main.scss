@@ -15,6 +15,7 @@ body {
 img {
     display: block;
     width: 100%;
+    object-fit: cover;
 }
 
 .text {
@@ -102,10 +103,6 @@ nav {
 }
 
 main {
-    #hero-image {
-        object-fit: contain;
-    }
-
     #hero-image-desktop {
         display: none;
     }
@@ -156,6 +153,7 @@ main {
 section {
     img {
         height: 240px;
+        object-fit: cover;
     }
 
     div {

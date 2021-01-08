@@ -20,6 +20,8 @@ body {
 img {
   display: block;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .text {
@@ -121,11 +123,6 @@ nav li span {
           transform: translateX(-50%);
 }
 
-main #hero-image {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 main #hero-image-desktop {
   display: none;
 }
@@ -188,6 +185,8 @@ main #arrows span:hover {
 
 section img {
   height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section div {
